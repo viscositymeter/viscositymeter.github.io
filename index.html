@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Віскозиметр Оствальда</title>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="favicon.ico">
+		<!-- <meta name="robots" content="noindex, nofollow"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="wrapper">
+<header class="header">
+	<div class="container">
+		<div class="header__row">
+			<h1 class="lang" key="header">STUDY OF LIQUID VISCOSITY</h1>
+		</div>
+		<div class="header__language">
+			<div class="header__language__uk">
+				<p>English</p>
+			</div>
+			<div class="header__language__switch-btn switch-uk" id="switch-uk"></div>
+			<div class="header__language__ua">
+				<p>Українська</p>
+			</div>
+		</div>
+	</div>
+</header>			<div class="container"><div class="list-group">
+				<div class="list-group-item list-header lang" data-name="spoiler-title" key='info'>
+					 Info
+				</div>
+				<div class="list-group-item list-content spoiler-body">
+				    <div class="popup1">
+				<div class="container">
+				<div class="popup1__body">
+					<div class="popup1__content">
+					
+						<div class="popup1__image">
+							<img src="img/popup-image.jpg" alt="" width="424px" height="566px;">
+						</div>
+						<div class="popup1__text">
+							
+							<span class="lang" key="infoHeader">Ostwald’s viscositymeter</span>
+							<br>
+							<p class="lang" key="infoParagraph1">A viscometer (also called viscosimeter) is an instrument used to measure the viscosity of a fluid. For liquids with viscosities which vary with flow conditions, an instrument called a rheometer is used. Thus, a rheometer can be considered as a special type of viscometer. Viscometers only measure under one flow condition</p>
+							<p class="lang" key="infoParagraph2">In general, either the fluid remains stationary and an object moves through it, or the object is stationary and the fluid moves past it. The drag caused by relative motion of the fluid and a surface is a measure of the viscosity.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				</div>
+			</div></div>
+<div class="container">
+	<div class="main">
+		<div class="top">
+			<div class="top__viscosimeter-block">
+				<div class="top__viscosimeter-block__timer timer">
+					
+				</div>
+				<div class="top__viscosimeter-block__tara">
+					<!--  width="300px" height="400px" -->
+					<img id="tara" src="img/sam/viscosimeter/tara.png" alt="">
+					<div class="top__viscosimeter-block__main-image">
+						<!--  width="200px" height="350px" -->
+						<img id="visco" src="img/sam/viscosimeter/new/main.png" alt="">
+					</div>
+					<div class="top__viscosimeter-block__timer">
+						<div class="top__viscosimeter-block__timer__block"><p id="watch">00:00</p></div>
+					</div>
+					<a href="#popup" class="lang" key="info">Info</a>
+				</div>
+			</div>
+			<div class="top__select-block">
+				<form action="#" class="top__select-block__form form-block" method="get">
+					<p class="form-block__headers lang" key="selectHeader">Select liquid and temperature</p>
+					<div class="form-block__choose">
+						<input type="radio" name="liquid" value="rad1" checked><p class="lang" key="select1">Distilled water at t = 24℃</p><br/>
+						<input type="radio" name="liquid" value="rad2"><p class="lang" key="select2">Distilled water + alcohol at t = 24℃</p><br/>
+						<input type="radio" name="liquid" value="rad3"><p class="lang" key="select3">Distilled water + alcohol at t = 32℃</p>
+					</div>
+				</form>
+				<button id="form-submit" class="lang" key='confirm'>Confirm</button>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="bottom__buttons-block buttons">
+				<div class="buttons__fill">
+					<div class="buttons__fill__button buttons__button">
+						<button id="fill" class="manage-buttons" disabled="disabled"></button>
+					</div>
+					<div class="buttons__fill__text buttons__text lang" key="button1">Fill in Viscosimeter</div>
+				</div>
+				<div class="buttons__pippete">
+					<div class="buttons__pippete__button buttons__button">
+						<button id="pippete" class="manage-buttons" disabled="disabled"></button>
+					</div>
+					<div class="buttons__pippete__text buttons__text lang" key="button2">Tighten the fluid</div>
+				</div>
+				<div class="buttons__start-exp">
+					<div class="buttons__start-exp__button buttons__button">
+						<button id="start-exp" class="manage-buttons" disabled="disabled"></button>
+					</div>
+					<div class="buttons__start-exp__text buttons__text lang" key="button3">Start experiment</div>
+				</div>
+				<div class="buttons__drain">
+					<div class="buttons__drain__button buttons__button">
+						<button id="drain" class="manage-buttons" disabled="disabled"></button>
+					</div>
+					<div class="buttons__drain__text buttons__text lang" key="button4">Pour out the liquid</div>
+				</div>
+			</div>
+			<div class="bottom__table-block table-block">
+				<div class="table-block__table">
+					<table width="100%" class="water24">
+						<thead>
+							<tr>
+								<th rowspan="3">№</th>
+								<th colspan="3"><p class="lang" key="tableWater">Distilled water</p><br/></th>
+							</tr>
+							<tr>
+								<th colspan="3">t<sub>1</sub>= 24℃</th>
+							</tr>
+							<tr>
+								<th>τ<sub>0</sub>,<br><span class="lang" key="s">s</span></th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+					<table width="100%">
+						<thead>
+							<tr>
+								<th>ρ<sub>0</sub> =<br/> 0,99733 <br/><span class="lang" key="kg">kg</span>/<span class="lang" key="m">m</span><sup>3</sup></th>
+								<th>η<sub>0</sub> = <br/>0,00091 <br/><span class="lang" key="n">N</span>∙<span class="lang" key="s">s</span>/<span class="lang" key="m">m</span><sup>2</sup></th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				<div class="table-block__table">
+					<table width="100%" class="alcohol24">
+						<thead>
+							<tr>
+								<th rowspan="3">№</th>
+								<th colspan="3"><p class="lang" key="tableWater">Distilled water<p><p class="lang" key="alcohol">+ alcohol</p></th>
+							</tr>
+							<tr>
+								<th colspan="3">t<sub>1</sub>= 24℃</th>
+							</tr>
+							<tr>
+								<th>τ<sub>x1</sub>,<br/><span class="lang" key="s">s</span></th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+					<table width="100%">
+						<thead>
+							<tr>
+								<th>ρ<sub>x</sub> = <br/>0,80741 <br/><span class="lang" key="kg">kg</span>/<span class="lang" key="m">m</span><sup>3</sup></th>
+								<th>η<sub>x</sub> = <br/>? <br/><span class="lang" key="n">N</span>∙<span class="lang" key="s">s</span>/<span class="lang" key="m">m</span><sup>2</sup></th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				<div class="table-block__table">
+					<table width="100%" class="alcohol32">
+						<thead>
+							<tr>
+								<th rowspan="3">№</th>
+								<th colspan="3"><p class="lang" key="tableWater">Distilled water<p><p class="lang" key="alcohol">+ alcohol</p></th>
+							</tr>
+							<tr>
+								<th colspan="3">t<sub>2</sub>= 32℃</th>
+							</tr>
+							<tr>
+								<th>τ<sub>x2</sub>,<br/><span class="lang" key="s">s</span></th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+					<!-- <table width="100%">
+						<thead>
+							<tr>
+								<th>ρ<sub>x1</sub> = <br/>0,79822 <br/><span class="lang" key="kg">kg</span>/<span class="lang" key="m">m</span><sup>3</sup></th>
+								<th>η<sub>x1</sub> = <br/>? <br/><span class="lang" key="n">N</span>∙<span class="lang" key="s">s</span>/<span class="lang" key="m">m</span><sup>2</sup></th>
+							</tr>
+						</thead>
+					</table> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			<div class="popup" id="popup">
+				<div class="container">
+				<div class="popup__body">
+					<div class="popup__content">
+					
+						<div class="popup__image">
+							<img src="img/popup-image.jpg" alt="" width="424px" height="566px;">
+						</div>
+						<div class="popup__text">
+							
+							<span class="lang" key="infoHeader">Ostwald’s viscositymeter</span>
+							<a href="#" class="popup__close">X</a>
+							<br>
+							<p class="lang" key="infoParagraph1">A viscometer (also called viscosimeter) is an instrument used to measure the viscosity of a fluid. For liquids with viscosities which vary with flow conditions, an instrument called a rheometer is used. Thus, a rheometer can be considered as a special type of viscometer. Viscometers only measure under one flow condition</p>
+							<p class="lang" key="infoParagraph2">In general, either the fluid remains stationary and an object moves through it, or the object is stationary and the fluid moves past it. The drag caused by relative motion of the fluid and a surface is a measure of the viscosity.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
+<script src="js/vendors.js"></script>
+<!--<script src="js/main.js"></script>-->
+<script src="js/custom.js" ></script>
+		
+	</body>
+</html>
